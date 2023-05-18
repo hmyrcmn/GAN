@@ -7,7 +7,7 @@ SYNTHETIC DATA WITH GAN
 
 
 
-[![](oluşan gorsellere ait youtube linki)](https://youtube.com/shorts/xk4RoKQ8pms?feature=share)
+[!(oluşan gorsellere ait youtube linki)](https://youtube.com/shorts/xk4RoKQ8pms?feature=share)
 
 
 
