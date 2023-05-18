@@ -6,6 +6,7 @@ SYNTHETIC DATA WITH GAN
 ## FARKLI SPEED ARALIKLARINA GÖRE OLUŞTURULAN RESİMLER 
 
 https://github.com/hmyrcmn/GAN/assets/75569106/eede6c42-eb16-4ba3-b843-8e3623fb519f
+[![Video](video_thumbnail.png)](movie.mp4)
 
 
 
