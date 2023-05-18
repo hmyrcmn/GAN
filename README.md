@@ -13,6 +13,7 @@ https://github.com/hmyrcmn/GAN/assets/75569106/eede6c42-eb16-4ba3-b843-8e3623fb5
 
 
 
+[![](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtube.com/shorts/xk4RoKQ8pms?feature=share)
 
 
 https://github.com/hmyrcmn/GAN/assets/75569106/0f1b5090-a009-4a94-926c-58e7b259705d
