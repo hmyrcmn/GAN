@@ -1,0 +1,980 @@
+Loading training set...
+/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 3 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+Num images:  90
+Image shape: [3, 1024, 1024]
+Label shape: [0]
+
+Constructing networks...
+Setting up PyTorch plugin "bias_act_plugin"... Done.
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+Setting up PyTorch plugin "upfirdn2d_plugin"... Done.
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+
+Generator              Parameters  Buffers  Output shape         Datatype
+---                    ---         ---      ---                  ---     
+mapping.fc0            262656      -        [4, 512]             float32 
+mapping.fc1            262656      -        [4, 512]             float32 
+mapping                -           512      [4, 18, 512]         float32 
+synthesis.b4.conv1     2622465     32       [4, 512, 4, 4]       float32 
+synthesis.b4.torgb     264195      -        [4, 3, 4, 4]         float32 
+synthesis.b4:0         8192        16       [4, 512, 4, 4]       float32 
+synthesis.b4:1         -           -        [4, 512, 4, 4]       float32 
+synthesis.b8.conv0     2622465     80       [4, 512, 8, 8]       float32 
+synthesis.b8.conv1     2622465     80       [4, 512, 8, 8]       float32 
+synthesis.b8.torgb     264195      -        [4, 3, 8, 8]         float32 
+synthesis.b8:0         -           16       [4, 512, 8, 8]       float32 
+synthesis.b8:1         -           -        [4, 512, 8, 8]       float32 
+synthesis.b16.conv0    2622465     272      [4, 512, 16, 16]     float32 
+synthesis.b16.conv1    2622465     272      [4, 512, 16, 16]     float32 
+synthesis.b16.torgb    264195      -        [4, 3, 16, 16]       float32 
+synthesis.b16:0        -           16       [4, 512, 16, 16]     float32 
+synthesis.b16:1        -           -        [4, 512, 16, 16]     float32 
+synthesis.b32.conv0    2622465     1040     [4, 512, 32, 32]     float32 
+synthesis.b32.conv1    2622465     1040     [4, 512, 32, 32]     float32 
+synthesis.b32.torgb    264195      -        [4, 3, 32, 32]       float32 
+synthesis.b32:0        -           16       [4, 512, 32, 32]     float32 
+synthesis.b32:1        -           -        [4, 512, 32, 32]     float32 
+synthesis.b64.conv0    2622465     4112     [4, 512, 64, 64]     float32 
+synthesis.b64.conv1    2622465     4112     [4, 512, 64, 64]     float32 
+synthesis.b64.torgb    264195      -        [4, 3, 64, 64]       float32 
+synthesis.b64:0        -           16       [4, 512, 64, 64]     float32 
+synthesis.b64:1        -           -        [4, 512, 64, 64]     float32 
+synthesis.b128.conv0   1442561     16400    [4, 256, 128, 128]   float16 
+synthesis.b128.conv1   721409      16400    [4, 256, 128, 128]   float16 
+synthesis.b128.torgb   132099      -        [4, 3, 128, 128]     float16 
+synthesis.b128:0       -           16       [4, 256, 128, 128]   float16 
+synthesis.b128:1       -           -        [4, 256, 128, 128]   float32 
+synthesis.b256.conv0   426369      65552    [4, 128, 256, 256]   float16 
+synthesis.b256.conv1   213249      65552    [4, 128, 256, 256]   float16 
+synthesis.b256.torgb   66051       -        [4, 3, 256, 256]     float16 
+synthesis.b256:0       -           16       [4, 128, 256, 256]   float16 
+synthesis.b256:1       -           -        [4, 128, 256, 256]   float32 
+synthesis.b512.conv0   139457      262160   [4, 64, 512, 512]    float16 
+synthesis.b512.conv1   69761       262160   [4, 64, 512, 512]    float16 
+synthesis.b512.torgb   33027       -        [4, 3, 512, 512]     float16 
+synthesis.b512:0       -           16       [4, 64, 512, 512]    float16 
+synthesis.b512:1       -           -        [4, 64, 512, 512]    float32 
+synthesis.b1024.conv0  51297       1048592  [4, 32, 1024, 1024]  float16 
+synthesis.b1024.conv1  25665       1048592  [4, 32, 1024, 1024]  float16 
+synthesis.b1024.torgb  16515       -        [4, 3, 1024, 1024]   float16 
+synthesis.b1024:0      -           16       [4, 32, 1024, 1024]  float16 
+synthesis.b1024:1      -           -        [4, 32, 1024, 1024]  float32 
+---                    ---         ---      ---                  ---     
+Total                  28794124    2797104  -                    -       
+
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+
+Discriminator  Parameters  Buffers  Output shape         Datatype
+---            ---         ---      ---                  ---     
+b1024.fromrgb  128         16       [4, 32, 1024, 1024]  float16 
+b1024.skip     2048        16       [4, 64, 512, 512]    float16 
+b1024.conv0    9248        16       [4, 32, 1024, 1024]  float16 
+b1024.conv1    18496       16       [4, 64, 512, 512]    float16 
+b1024          -           16       [4, 64, 512, 512]    float16 
+b512.skip      8192        16       [4, 128, 256, 256]   float16 
+b512.conv0     36928       16       [4, 64, 512, 512]    float16 
+b512.conv1     73856       16       [4, 128, 256, 256]   float16 
+b512           -           16       [4, 128, 256, 256]   float16 
+b256.skip      32768       16       [4, 256, 128, 128]   float16 
+b256.conv0     147584      16       [4, 128, 256, 256]   float16 
+b256.conv1     295168      16       [4, 256, 128, 128]   float16 
+b256           -           16       [4, 256, 128, 128]   float16 
+b128.skip      131072      16       [4, 512, 64, 64]     float16 
+b128.conv0     590080      16       [4, 256, 128, 128]   float16 
+b128.conv1     1180160     16       [4, 512, 64, 64]     float16 
+b128           -           16       [4, 512, 64, 64]     float16 
+b64.skip       262144      16       [4, 512, 32, 32]     float32 
+b64.conv0      2359808     16       [4, 512, 64, 64]     float32 
+b64.conv1      2359808     16       [4, 512, 32, 32]     float32 
+b64            -           16       [4, 512, 32, 32]     float32 
+b32.skip       262144      16       [4, 512, 16, 16]     float32 
+b32.conv0      2359808     16       [4, 512, 32, 32]     float32 
+b32.conv1      2359808     16       [4, 512, 16, 16]     float32 
+b32            -           16       [4, 512, 16, 16]     float32 
+b16.skip       262144      16       [4, 512, 8, 8]       float32 
+b16.conv0      2359808     16       [4, 512, 16, 16]     float32 
+b16.conv1      2359808     16       [4, 512, 8, 8]       float32 
+b16            -           16       [4, 512, 8, 8]       float32 
+b8.skip        262144      16       [4, 512, 4, 4]       float32 
+b8.conv0       2359808     16       [4, 512, 8, 8]       float32 
+b8.conv1       2359808     16       [4, 512, 4, 4]       float32 
+b8             -           16       [4, 512, 4, 4]       float32 
+b4.mbstd       -           -        [4, 513, 4, 4]       float32 
+b4.conv        2364416     16       [4, 512, 4, 4]       float32 
+b4.fc          4194816     -        [4, 512]             float32 
+b4.out         513         -        [4, 1]               float32 
+---            ---         ---      ---                  ---     
+Total          29012513    544      -                    -       
+
+Setting up augmentation...
+Distributing across 1 GPUs...
+Setting up training phases...
+Exporting sample images...
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+Initializing logs...
+Training for 25000 kimg...
+
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+/content/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py:55: UserWarning: conv2d_gradfix not supported on PyTorch 2.0.1+cu117. Falling back to torch.nn.functional.conv2d().
+  warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')
+Traceback (most recent call last):
+  File "/content/stylegan2-ada-pytorch/train.py", line 538, in <module>
+    main() # pylint: disable=no-value-for-parameter
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/content/stylegan2-ada-pytorch/train.py", line 531, in main
+    subprocess_fn(rank=0, args=args, temp_dir=temp_dir)
+  File "/content/stylegan2-ada-pytorch/train.py", line 383, in subprocess_fn
+    training_loop.training_loop(rank=rank, **args)
+  File "/content/stylegan2-ada-pytorch/training/training_loop.py", line 284, in training_loop
+    loss.accumulate_gradients(phase=phase.name, real_img=real_img, real_c=real_c, gen_z=gen_z, gen_c=gen_c, sync=sync, gain=gain)
+  File "/content/stylegan2-ada-pytorch/training/loss.py", line 131, in accumulate_gradients
+    (real_logits * 0 + loss_Dreal + loss_Dr1).mean().mul(gain).backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: derivative for aten::grid_sampler_2d_backward is not implemented
